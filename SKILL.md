@@ -28,6 +28,31 @@ Use the Plaud CLI when:
 
 CLI reference lives in `references/cli.md`. MCP reference lives in `references/mcp.md`.
 
+## Telegram slash command
+
+This skill supports a single Telegram command shape when the OpenClaw Telegram bot exposes `/plaud` as a custom command:
+
+```text
+/plaud [action] [target]
+```
+
+Actions:
+
+- `/plaud`: show compact help plus the latest 3 recordings
+- `/plaud recent`: list recent recordings
+- `/plaud last`: show the latest meaningful recording, skipping tiny accidental clips under 30 seconds when possible
+- `/plaud find <query>`: search by title, keyword, or date
+- `/plaud summary [target]`: summarize a recording, defaulting to last meaningful recording
+- `/plaud actions [target]`: extract action items, owners, dates, and open loops
+- `/plaud transcript [target]`: fetch transcript or explain if unavailable
+- `/plaud export [target]`: export metadata, summary, and transcript using the CLI helper
+- `/plaud status`: check MCP and CLI auth status
+- `/plaud login`: start Plaud OAuth
+
+If the user sends `/plaud <text>` and `<text>` is not a known action, treat it as `/plaud find <text>`.
+
+Slash command registration is handled by OpenClaw Telegram `customCommands`, not by the skill bundle itself. The skill documents and implements the behavior once OpenClaw routes the command text to the agent.
+
 ## Standard workflows
 
 ### List recent recordings
