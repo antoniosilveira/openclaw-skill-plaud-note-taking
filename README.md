@@ -1,6 +1,6 @@
-# OpenClaw Plaud Skill
+# OpenClaw Plaud AI Skill
 
-An OpenClaw skill for working with Plaud recordings through Plaud MCP and the Plaud CLI.
+An OpenClaw skill for working with Plaud AI note-taker recordings through Plaud MCP and the Plaud CLI.
 
 ## What it helps agents do
 
