@@ -1,7 +1,7 @@
 {
-  "name": "openclaw-skill-plaud",
+  "name": "openclaw-skill-plaud-note-taking",
   "version": "0.1.0",
-  "description": "OpenClaw skill for Plaud recordings via Plaud MCP and CLI",
+  "description": "OpenClaw skill for Plaud note taking via Plaud MCP and CLI",
   "license": "MIT-0",
   "author": "Antonio Silveira",
   "type": "module",
