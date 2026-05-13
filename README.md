@@ -1,4 +1,4 @@
-# OpenClaw Plaud Skill
+# OpenClaw Plaud AI Note-taking Skill
 
 An OpenClaw skill for working with Plaud recordings through Plaud MCP and the Plaud CLI.
 
